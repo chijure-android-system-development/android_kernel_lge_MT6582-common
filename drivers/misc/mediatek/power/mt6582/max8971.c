@@ -33,7 +33,7 @@
 #include <cust_charging.h>
 #include <mt_auxadc_sw.h>
 
-#include <max8971.h>
+#include "max8971.h"
 #include <mach/board_lge.h>
 
 extern kal_bool chargin_hw_init_done;
