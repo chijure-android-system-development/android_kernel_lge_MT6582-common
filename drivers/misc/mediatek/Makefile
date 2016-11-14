@@ -96,6 +96,7 @@ obj-y	+= lcm/
 
 ifeq ($(CONFIG_MTK_SENSOR_SUPPORT),y)
 obj-$(CONFIG_MTK_HWMON)	    += hwmon/
+obj-$(CONFIG_THUNDERSONIC_ENGINE_GPL) += thundersonic_engine/
 # LGE_CHANGE_S: [2014-09-04] boyoung1.kim@lge.com
 # Comment: Disable Sensor do not use
 #obj-$(CONFIG_CUSTOM_KERNEL_ALSPS) += alsps/
