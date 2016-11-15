@@ -271,4 +271,11 @@ source "fs/dlm/Kconfig"
 config LGE_SREADAHEAD
 	bool "LGE SRA(Super Read Ahead) Feature for booting time enhancement"
 	default n
+
+config DYNAMIC_FSYNC
+	bool "dynamic file sync control"
+	default n
+	help
+	  An experimental file sync control using new power_suspend driver
+
 endmenu
