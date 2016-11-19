@@ -139,6 +139,8 @@ endif
 
 source "drivers/usb/dwc3/Kconfig"
 
+source "drivers/usb/otg/Kconfig"
+
 source "drivers/usb/chipidea/Kconfig"
 
 comment "USB port drivers"
