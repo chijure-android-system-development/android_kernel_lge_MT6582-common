@@ -174,7 +174,7 @@ static unsigned int g_limited_max_ncpu;
 static unsigned int g_limited_max_freq;
 static unsigned int g_limited_min_freq;
 static unsigned int g_cpufreq_get_ptp_level = 0;
-static unsigned int g_max_freq_by_ptp = DVFS_F0; /* default 1.3GHz */
+static unsigned int g_max_freq_by_ptp = DVFS_F0_1; /* default 1.690GHz */
 #if defined(CONFIG_THERMAL_LIMIT_TEST)
 static unsigned int g_limited_load_for_thermal_test = 0;
 static unsigned int g_limited_max_thermal_power;
@@ -239,6 +239,10 @@ struct mt_cpu_power_info
 ****************************/
 #if defined(HQA_LV_1_09V)
 static struct mt_cpu_freq_info mt6582_freqs_e1[] = {
+    OP(DVFS_F0_1, DVFS_V0),
+    OP(DVFS_F0_2, DVFS_V0),
+    OP(DVFS_F0_3, DVFS_V0),
+    OP(DVFS_F0_4, DVFS_V0),
     OP(DVFS_F0, DVFS_V0),
     OP(DVFS_F1, DVFS_V0),
     OP(DVFS_F2, DVFS_V1),
@@ -247,6 +251,10 @@ static struct mt_cpu_freq_info mt6582_freqs_e1[] = {
 };
 #elif defined(HQA_NV_1_15V)
 static struct mt_cpu_freq_info mt6582_freqs_e1[] = {
+    OP(DVFS_F0_1, DVFS_V0),
+    OP(DVFS_F0_2, DVFS_V0),
+    OP(DVFS_F0_3, DVFS_V0),
+    OP(DVFS_F0_4, DVFS_V0),
     OP(DVFS_F0, DVFS_V0),
     OP(DVFS_F1, DVFS_V1),
     OP(DVFS_F2, DVFS_V2),
@@ -255,6 +263,10 @@ static struct mt_cpu_freq_info mt6582_freqs_e1[] = {
 };
 #elif defined(HQA_HV_1_21V)
 static struct mt_cpu_freq_info mt6582_freqs_e1[] = {
+    OP(DVFS_F0_1, DVFS_V0),
+    OP(DVFS_F0_2, DVFS_V0),
+    OP(DVFS_F0_3, DVFS_V0),
+    OP(DVFS_F0_4, DVFS_V0),
     OP(DVFS_F0, DVFS_V0),
     OP(DVFS_F1, DVFS_V1),
     OP(DVFS_F2, DVFS_V1),
@@ -263,6 +275,10 @@ static struct mt_cpu_freq_info mt6582_freqs_e1[] = {
 };
 #else /* Normal case */
 static struct mt_cpu_freq_info mt6582_freqs_e1[] = {
+    OP(DVFS_F0_1, DVFS_V0),
+    OP(DVFS_F0_2, DVFS_V0),
+    OP(DVFS_F0_3, DVFS_V0),
+    OP(DVFS_F0_4, DVFS_V0),
     OP(DVFS_F0, DVFS_V0),
     OP(DVFS_F1, DVFS_V1),
     OP(DVFS_F2, DVFS_V2),
