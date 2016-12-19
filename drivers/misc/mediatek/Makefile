@@ -25,7 +25,7 @@ ifneq ($(CONFIG_MTK_GIC),y)
 obj-y   += irq/
 endif
 
-obj-$(CONFIG_MTK_CPU_STRESS)	+= cpu_stress/
+#obj-$(CONFIG_MTK_CPU_STRESS)	+= cpu_stress/
 obj-$(CONFIG_MTK_LASTPC)	    += lastpc/
 obj-$(CONFIG_MTK_DBG_DUMP) += dbg_dump/
 
@@ -130,11 +130,11 @@ obj-$(CONFIG_ZRAM)	+= mlog/
 # [LGE_UPDATE_S][yonghwan.lym@lge.com][2015-01-02] Multiple EEPROM Suport
 #obj-y	+= cam_cal/src/$(MTK_PLATFORM)/dummy_eeprom/
 
-obj-$(CONFIG_MTK_CAM_CAL_DW9716_EEPROM_SUPPORT)	+= cam_cal/src/$(MTK_PLATFORM)/DW9716_eeprom/
-obj-$(CONFIG_MTK_CAM_CAL_GT24C32A_SUPPORT)	+= cam_cal/src/$(MTK_PLATFORM)/GT24c32a_eeprom/
-obj-$(CONFIG_MTK_CAM_CAL_BRCC064GWZ_3_SUPPORT) += cam_cal/src/$(MTK_PLATFORM)/BRCC064GWZ_3_eeprom/
-obj-$(CONFIG_MTK_CAM_CAL_BRCB032GWZ_3_SUPPORT) += cam_cal/src/$(MTK_PLATFORM)/BRCB032GWZ_3_eeprom/
-obj-$(CONFIG_MTK_CAM_CAL_COMMON_SUPPORT) += cam_cal/src/$(MTK_PLATFORM)/Common_eeprom/
+obj-$(CONFIG_MTK_CAM_CAL_DW9716_EEPROM_SUPPORT)	+= cam_cal/src/mt6582/DW9716_eeprom/
+obj-$(CONFIG_MTK_CAM_CAL_GT24C32A_SUPPORT)	+= cam_cal/src/mt6582/GT24c32a_eeprom/
+obj-$(CONFIG_MTK_CAM_CAL_BRCC064GWZ_3_SUPPORT) += cam_cal/src/mt6582/BRCC064GWZ_3_eeprom/
+obj-$(CONFIG_MTK_CAM_CAL_BRCB032GWZ_3_SUPPORT) += cam_cal/src/mt6582/BRCB032GWZ_3_eeprom/
+obj-$(CONFIG_MTK_CAM_CAL_COMMON_SUPPORT) += cam_cal/src/mt6582/Common_eeprom/
 # [LGE_UPDATE_E][yonghwan.lym@lge.com][2015-01-02] Multiple EEPROM Suport
 obj-y	+= lens/
 obj-y	+= imgsensor/src/
@@ -250,7 +250,7 @@ obj-$(CONFIG_MTK_SWITCH_TX_POWER) += sw_tx_power/
 obj-$(CONFIG_MTK_BTIF)	+= btif/
 obj-$(CONFIG_MTK_POWER_GS)	+= power_gs/
 obj-$(CONFIG_MTK_VIDEO) += video/
-obj-$(CONFIG_MTK_AEE_MRDUMP)	+= mrdump/
+#obj-$(CONFIG_MTK_AEE_MRDUMP)	+= mrdump/
 obj-$(CONFIG_MTK_WMT_CCCI)	+= wmt_ccci/
 obj-$(CONFIG_MTK_VCOREFS)	+= vcorefs/
 
